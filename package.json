@@ -38,9 +38,9 @@
   "scripts": {
     "pdf": "shower pdf",
     "start": "shower serve",
-    "bundle": "shower bundle --files '**' --files '!{docs,node_modules,bundled}{,/**}' --files '!*.{md,toml,json}'",
-    "archive": "shower archive --files '**' --files '!{docs,node_modules,bundled}{,/**}' --files '!*.{md,toml,json}'",
-    "publish": "shower publish --files '**' --files '!{docs,node_modules,bundled}{,/**}' --files '!*.{md,toml,json}'",
+    "bundle": "shower bundle -o docs --files '**' --files '!{docs,docs0,node_modules,bundled}{,/**}' --files '!*.{md,toml,json}'",
+    "archive": "shower archive --files '**' --files '!{docs,docs0,node_modules,bundled}{,/**}' --files '!*.{md,toml,json}'",
+    "publish": "shower publish --files '**' --files '!{docs,docs0,node_modules,bundled}{,/**}' --files '!*.{md,toml,json}'",
     "test": "npm run bundle && ls bundled && npm run archive && path-exists presentation.zip"
   }
 }
