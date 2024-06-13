@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Как вдохновить коллег?</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
+        <link
+            rel="stylesheet"
+            href="node_modules/@shower/ribbon/styles/styles.css"
+        />
+
+        <link rel="preload" href="./pictures/cover1.png" as="image" />
+        <link rel="preload" href="./pictures/cover.png" as="image" />
+        <link rel="preload" href="./pictures/me.png" as="image" />
+        <link rel="preload" href="./pictures/team.jpg" as="image" />
+        <link rel="preload" href="./pictures/rocky.jpg" as="image" />
+        <link rel="preload" href="./pictures/colombo1.jpg" as="image" />
+        <link rel="preload" href="./pictures/Brian_Tracy.jpg" as="image" />
+
+        <style>
+            @font-face {
+                font-family: "Oswald";
+                src: url("./Oswald-Light.ttf");
+                font-weight: 300;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: "Oswald";
+                src: url("./Oswald-Regular.ttf");
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            .shower {
+                --slide-ratio: calc(16 / 9);
+                --color-blue: #af1d23;
+            }
+            .shower h2,
+            .shower h3 {
+                font-family: "Oswald";
+                font-weight: 400;
+            }
+            .shower h3 {
+                color: #af1d23;
+                line-height: 120%;
+            }
+
+            .slide::after {
+                display: none;
+            }
+        </style>
+    </head>
+    <body class="shower list">
+        <header class="caption">
+            <h1>Shower Presentation Engine</h1>
+            <p>Yours Truly, Famous Inc.</p>
+        </header>
+
+        <section class="slide" id="cover">
+            <h2>Как вдохновить коллег?</h2>
+            <p>Обсудим книгу</p>
+            <figure>
+                <img class="cover" src="pictures/cover1.png" alt="" />
+            </figure>
+            <style>
+                #cover {
+                    padding-top: 0;
+                }
+                #cover h2 {
+                    margin: 22px 0 0;
+                    color: #af1d23;
+                    text-align: center;
+                    font-size: 70px;
+                }
+
+                #cover p {
+                    margin: 10px 0 0;
+                    text-align: center;
+                    color: white;
+                    font-style: italic;
+                    font-size: 20px;
+                }
+
+                #cover p a {
+                    color: white;
+                }
+            </style>
+        </section>
+
+        <section class="slide">
+            <h2>Обо мне</h2>
+            <div
+                class="columns two"
+                style="grid-template-columns: max-content 1fr"
+            >
+                <p>
+                    <img
+                        src="pictures/me.jpg"
+                        width="262"
+                        style="border-radius: 50%"
+                    />
+                </p>
+                <p>Булат — front-end разработчик из «Проект 7» (дроны)</p>
+            </div>
+        </section>
+
+        <section class="slide">
+            <h2>Об авторе книги</h2>
+            <div
+                class="columns two"
+                style="grid-template-columns: max-content 1fr"
+            >
+                <p>
+                    <img src="pictures/Brian_Tracy.jpg" />
+                </p>
+                <p>
+                    Брайан Трейси (1944) — канадско-американский мотивационный
+                    оратор и автор книг о саморазвитии. Он предлагает
+                    консультации по лидерству, продажам, самооценке, целям,
+                    стратегии, творчеству и психологии успеха. (из Википедии)
+                </p>
+            </div>
+        </section>
+
+        <section class="slide">
+            <h2>О книге</h2>
+            <div
+                class="columns two"
+                style="grid-template-columns: max-content 1fr"
+            >
+                <div>
+                    <img src="pictures/cover.png" width="262" />
+                </div>
+                <div>
+                    <h3 style="margin-top: 0">
+                        Полная вовлечённость:<br />Вдохновляйте, мотивируйте и
+                        раскрывайте всё лучшее в своей команде
+                    </h3>
+                    Написана в 2011 г
+                </div>
+            </div>
+        </section>
+
+        <section class="slide">
+            <h2>Наш план</h2>
+            <ol>
+                <li>Выбираем подходящих сотрудников</li>
+                <li>Вдохновляем сотрудников</li>
+                <li>Достигаем результатов</li>
+                <li>Делаем выводы</li>
+            </ol>
+        </section>
+
+        <section class="slide">
+            <h2
+                style="
+                    position: absolute;
+                    bottom: 10%;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    color: white;
+                "
+            >
+                Выбираем подходящих сотрудников
+            </h2>
+            <figure>
+                <img class="cover" src="pictures/team.jpg" alt="" />
+            </figure>
+        </section>
+
+        <section class="slide" id="cheer-up">
+            <h2
+                style="
+                    position: absolute;
+                    bottom: 10%;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    color: white;
+                "
+            >
+                Вдохновляем сотрудников
+            </h2>
+            <ol>
+                <li class="next">Даём интересные и выполнимые задачи</li>
+                <li class="next">Налаживаем взаимодействие сотрудников</li>
+                <li class="next">Держим сотрудников в курсе</li>
+                <li class="next">Поощряем личное развитие</li>
+                <li class="next">Вознаграждаем за успехи</li>
+                <li class="next">Даём обратную связь</li>
+                <li class="next">Обращаемся вежливо</li>
+            </ol>
+            <figure>
+                <img class="cover" src="pictures/sex_bob-omb.png" alt="" />
+            </figure>
+            <style>
+                #cheer-up li,
+                #cheer-up li::before {
+                    color: white;
+                }
+            </style>
+        </section>
+
+        <section class="slide">
+            <h2
+                style="
+                    position: absolute;
+                    bottom: 10%;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    color: white;
+                "
+            >
+                Достигаем результатов
+            </h2>
+            <figure>
+                <img class="cover" src="pictures/rocky.jpg" alt="" />
+            </figure>
+        </section>
+
+        <section class="slide">
+            <h2
+                style="
+                    position: absolute;
+                    bottom: 10%;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    color: white;
+                "
+            >
+                Делаем выводы
+            </h2>
+            <figure>
+                <img class="cover" src="pictures/colombo1.jpg" alt="" />
+            </figure>
+        </section>
+
+        <section class="slide" id="thats-it">
+            <h2>на этом всё</h2>
+            <p>время позадавать вопросы и пообщаться</p>
+            <figure>
+                <img class="cover" src="pictures/cover1.png" alt="" />
+            </figure>
+            <style>
+                #thats-it {
+                    padding-top: 0;
+                }
+
+                #thats-it h2 {
+                    margin: 22px 0 0;
+                    color: #af1d23;
+                    text-align: center;
+                    font-size: 70px;
+                }
+
+                #thats-it p {
+                    margin: 10px 0 0;
+                    text-align: center;
+                    color: white;
+                    font-style: italic;
+                    font-size: 20px;
+                }
+            </style>
+        </section>
+
+        <div class="progress"></div>
+
+        <script src="node_modules/@shower/core/dist/shower.js"></script>
+        <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+    </body>
+</html>
